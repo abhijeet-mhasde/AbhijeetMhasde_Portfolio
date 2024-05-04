@@ -1,0 +1,265 @@
+/* Media query for desktop */
+@media only screen and (max-width: 750px) {
+    header .desktop-nav {
+        display: none;
+    }
+
+    header .mobile-nav {
+        display: flex;
+    }
+}
+
+/* For mobile view */
+@media (max-width: 750px) {
+    header {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0);
+        color: white;
+        position: fixed;
+    }
+
+    header span {
+        font-size: 2rem;
+        font-weight: bolder;
+        margin: 1rem 2rem;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+        z-index: 999;
+    }
+
+    .dropdown-menu.show {
+        display: none;
+        position: fixed;
+        /* top: 50%; */
+        left: 50%;
+        width:75%;
+        transform: translate(-50%);
+        background-color: black;
+        opacity: 80%;
+        padding: 2rem;
+        border-radius: 5px;
+        z-index: 1000; /* Ensure the dropdown appears above the overlay */
+    }
+
+    .dropdown-menu hr{
+        background-color: white;
+    }
+
+    .dropdown-menu li {
+        list-style: none;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 2.5vw; /* Responsive font size */
+    }
+
+    .dropdown-menu a {
+        text-decoration: none;
+        color: white;
+        height: 2.5%;
+    }
+    .section {
+      height: 100vh;
+      padding: 15vh; /* Adjust spacing as needed */
+      text-align: center;
+    }
+    #home{
+        background-image: linear-gradient(rgb(42, 42, 42), rgb(82, 82, 82), rgb(164, 164, 164), rgb(82, 82, 82));
+    }
+    .section img {
+        padding-top: 2vh;
+      width: 50vw; /* Make image full width */
+      height: 50vw; /* Maintain aspect ratio */
+    }
+    .homeContent {
+      padding: 2vh; /*Adjust spacing as needed*/
+    }
+    #home h1 {
+      font-size: 5.5vw; /* Adjust font size */
+    }
+    #home h1 span {
+      font-size: 4vw; /* Adjust font size */
+    }
+    #home h3 {
+      font-size: 4vw; /* Adjust font size */
+    }
+    #home button {
+        margin: 2% 0;
+        background-color: black;
+        font-size: 3.5vw;
+    }
+    #home button:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    #aboutMe{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    }
+    #aboutMe h2{
+        font-size: 4vw;
+        width: 30vw;
+        text-align: center;
+    }
+    #aboutMe p{
+        font-size: 2vw;
+        text-align: left;
+        width: 70vw;
+        padding-right: 5vw;
+        text-align: justify;
+    }
+    hr{
+        height: 5px;
+        background-color: black;
+    }
+    #education{
+        height: 50vh;
+        padding: 0%;
+    }
+    #education h2{
+        font-size: 4vw;
+        padding: 2vh 0;
+    }
+    #edu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 30vh;
+    }
+    #edu h3{
+        font-size: 3vw;
+    }
+    #edu span{
+        font-size: 2vw;
+        font-style: italic;
+    }
+    #work{
+        background-image: linear-gradient(rgb(42, 42, 42), rgb(82, 82, 82), rgb(164, 164, 164), rgb(82, 82, 82));
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        color: black;
+        justify-content: center;
+    }
+    #work h2{
+        font-size: 4vw;
+    }
+    #workContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .workContent h3{
+        font-size: 3vw;
+    }
+    .workContent span{
+        font-size: 2vw;
+        font-style: italic;
+    }
+    .workContent p{
+        font-size: 2vw;
+    }
+    .workContent a button{
+        font-size: 2vw;
+        color: black;
+    }
+    .workContent a button:hover{
+        background-color: black;
+    }
+    #skills{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    #skills h2{
+        font-size: 4vw;
+        /* height: 25vh; */
+        padding-top: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skillSet{
+        display: flex;
+        height: 80vh;
+    }
+    .skillSet div h3{
+        font-size: 3vw;
+        /* height: 15vh; */
+    }
+    .skillSet div p{
+        font-size: 2vw;
+    }
+    .progress{
+        height: 2vw!important;
+    }
+    .skill1,.skill2,.skill3,.skill4{
+        padding: 3vw;
+        width: 25vw;
+    }
+    /* Footer Styling */
+    footer {
+        background-image: linear-gradient(rgb(42, 42, 42), rgb(82, 82, 82), rgb(164, 164, 164), rgb(82, 82, 82));
+        color: black;
+        text-align: center;
+        height: 100vh;
+    }
+    footer h3{
+        display: flex;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+    }
+    footer form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+    .mb-3{
+        width: 40vw;
+    }
+    .mb-3 input{
+        height: 5vw;
+    }
+    .mb-3 ::placeholder{
+        font-size: 3vw;
+    }
+    footer .icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .icons a{
+        text-decoration: none;
+        color: white;
+        /* font-size: 3vw; */
+    }
+    .icons a:hover{
+        color: black;
+    }
+    .icons a:active{
+        color: black;
+    }
+
+}

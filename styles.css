@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    position: fixed;
+}
+
+header .desktop-nav {
+    display: flex;
+}
+
+header .mobile-nav {
+    display: none;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    list-style: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav li:hover {
+    background-color: grey;
+    border: 2px solid white;
+    padding: 1rem 1.8rem;
+}
+
+header nav li:hover a{
+    color: black;
+    font-weight: bold;
+}
+
+.mobile-nav svg {
+    width: 2rem; /* Adjust the size as needed */
+    height: 2rem; /* Adjust the size as needed */
+    margin-right: 1rem; /* Adjust the margin as needed */
+}
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem; /* Adjust padding as needed */
+}
+.mobile-nav a:hover svg {
+    fill: gray; /* Adjust the color to match your design */
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 750px) {
+    /* Adjustments for smaller screens */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    footer .icons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

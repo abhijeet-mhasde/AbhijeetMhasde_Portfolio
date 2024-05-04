@@ -1,0 +1,232 @@
+/* For desktop view */
+@media (min-width: 750px) {
+    .section {
+      width: 100%;
+      height: 100vh;
+    }
+    #home {
+      background-image: linear-gradient(rgb(42, 42, 42), rgb(82, 82, 82), rgb(164, 164, 164), rgb(82, 82, 82), rgb(42, 42, 42));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .homeContent {
+      padding-left: 5%;
+      width: 45%;
+    }
+    #home h1 {
+      font-size: 3vw;
+      margin: 0%;
+    }
+    #home h1 span {
+      font-size: 2vw;
+    }
+    #home h3 {
+      margin: 0%;
+      font-size: 1.8vw;
+    }
+    #home img{
+        width: auto;
+    }
+    
+    #aboutMe{
+        height: 60vh;
+    }
+    #education{
+        height: 40vh;
+    }
+    #aboutMe{
+        display: flex;
+        align-items: center;
+        margin: 10vh 0 -10vh 0;
+        padding: 0 10vw;
+    }
+    #aboutMe h2{
+        font-size: 3vw;
+        width: 30vw;
+    }
+    #aboutMe p{
+        width: 70vw;
+        font-size: 1.3vw;
+    }
+    hr{
+        height: 5px;
+        background-color: black;
+    }
+    #education{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0 10vw;
+    }
+    #education h2{
+        font-size: 3vw;
+        width: 30vw;
+    }
+    #edu{
+        width: 70vw;
+    }
+    #education h3{
+        font-size: 1.8vw;
+    }
+    #education span{
+        font-style: italic;
+        font-size: 1.2vw;
+    }
+    
+    #work{
+        background-image: linear-gradient(rgb(42, 42, 42), rgb(82, 82, 82), rgb(164, 164, 164), rgb(82, 82, 82), rgb(42, 42, 42));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #work h2{
+        font-size: 3vw;
+        width: 40vw;
+        margin-left: 20vw;
+    }
+    #work h3{
+        font-size: 2vw;
+    }
+    .workContent{
+        width: 80vw;
+        margin-right: 15vw;
+    }
+    .workContent div span{
+       font-size: 1.7vw;
+       font-style: italic;
+    }
+    .workContent div{
+        margin: 2% 0;
+    }
+    .workContent div p{
+        font-size: 1.2vw;
+    }
+    #work button{
+        margin: 2% 0;
+        background-color: black;
+    }
+    #work button:hover{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+
+    #skills{
+        display: flex;
+        flex-direction: column;
+    }
+    #skills h2{
+        font-size: 3vw;
+        margin: 12vh auto 0 auto;
+    }
+    .skillSet{
+        display: flex;
+        margin: 10vh 0 0 0;
+        justify-content: space-around;
+    }
+    .skillSet h3{
+        font-size: 2vw;
+        height: 5vw;
+    }
+    .skill{
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+        font-size: 1.3vw;
+    }
+    div .progress{
+        height: 0.8vw!important;
+    }
+    footer{
+        height: 100vh;
+        background-image: linear-gradient(rgb(42, 42, 42), rgb(82, 82, 82), rgb(164, 164, 164), rgb(82, 82, 82), rgb(42, 42, 42));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer h3{
+        font-size: 3vw;
+        margin-bottom: 5vh;
+        /* float: right; */
+    }
+    footer .btn{
+        margin: 2% 0;
+        background-color: black;
+    }
+    form .btn:hover{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mb-3{
+        width: 40vw;
+    }
+    .icons{
+        margin-top: 5%;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icons a{
+        text-decoration: none;
+        color: white;
+        font-size: 3vw;
+    }
+    .icons a:hover{
+        color: black;
+    }
+    .icons a:active{
+        color: black;
+    }
+    /* Hide the message box by default */
+    .hidden {
+        display: none;
+    }
+    
+    /* Style the message box */
+    #messageBox {
+        background-color: #dff0d8; /* Green background color */
+        color: #3c763d; /* Dark green text color */
+        padding: 15px; /* Add some padding */
+        margin-bottom: 20px; /* Add some margin to separate it from other content */
+        border: 1px solid #d6e9c6; /* Add a border */
+        border-radius: 4px; /* Add some border radius */
+    }
+    
+}
+
+/* Your existing CSS */
+/* Additions for responsiveness */
+
+/* Header Navigation */
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+/* footer {
+    background-color: #1e272e;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} */
+
+    
